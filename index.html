@@ -12,21 +12,28 @@
 </head>
 
 <body style="background: rgb(242,242,242);color: #55595c;">
-    <nav class="navbar navbar-expand-md" style="background: #ffffff;padding-top: 20px;padding-bottom: 20px;box-shadow: 0px 0px;">
-        <div class="container-fluid"><a class="navbar-brand" href="index.html" style="font-weight: bold;font-size: 24px;">Chohay</a>
-            <div class="collapse navbar-collapse" id="navcol-1">
-                <ul class="navbar-nav me-auto" style="padding-right: 0px;margin-right: 0px;width: 261.967px;min-width: 100px;">
-                    <li class="nav-item"></li>
-                    <li class="nav-item"></li>
-                    <li class="nav-item"></li>
-                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">Danh mục</a>
-                        <div class="dropdown-menu"><a class="dropdown-item" href="#">Thời trang</a><a class="dropdown-item" href="#">Đồ điện tử</a><a class="dropdown-item" href="#">Thú cưng</a></div>
-                    </li>
-                </ul>
-                <div class="input-group me-auto mb-3" style="margin: 0px;width: 500px;height: 30px;"><input class="form-control form-control" type="text" placeholder="Tìm kiếm sản phẩm trên Chợ Hay" aria-label="Search" aria-describedby="button-addon2" style="height: 35px;color: rgb(0,0,0);border-width: 1px;border-color: rgba(0,0,0,0.35);"><button class="btn btn-outline-secondary" type="button" id="button-addon-1" style="height: 35px;padding: 4px 24px;border-style: solid;backdrop-filter: opacity(1);">Tìm kiếm</button></div><button class="btn btn-outline-secondary" type="button" id="button-addon-2" style="height: 45px;padding: 4px 24px;backdrop-filter: opacity(1);color: rgb(0,0,0);margin-right: 20px;border: 2px solid rgb(0,0,0);">Đăng Tin</button><a class="btn btn-dark" role="button" style="padding-top: 10px;padding-bottom: 10px;border-width: 1px;" href="login.html">Đăng nhập</a>
+    <header>
+        <nav class="navbar navbar-expand-md bg-body">
+            <div class="container-fluid"><a class="navbar-brand" href="#">Brand</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="navbar-nav me-auto" style="padding-right: 0px;margin-right: 0px;width: 20%;min-width: 100px;">
+                        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">Danh mục</a>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="#">Thời trang</a><a class="dropdown-item" href="#">Đồ điện tử</a><a class="dropdown-item" href="#">Thú cưng</a></div>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav" style="width: 50%;">
+                        <li class="nav-item" style="width: 100%;">
+                            <div class="input-group me-auto mb-3" style="margin: 0px;width: 100%;height: 30px;"><input class="form-control form-control" type="text" placeholder="Tìm kiếm sản phẩm trên Chợ Hay" aria-label="Search" aria-describedby="button-addon2" style="height: 35px;color: rgb(0,0,0);border-width: 1px;border-color: rgba(0,0,0,0.35);width: 60%;"><button class="btn btn-outline-secondary" type="button" id="button-addon-1" style="height: 35px;padding: 4px 24px;border-style: solid;backdrop-filter: opacity(1);width: 30%;">Tìm kiếm</button></div>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto" style="width: 20%;">
+                        <li class="nav-item" style="width: 45%;height: 100%;"><button class="btn btn-outline-secondary text-center" type="button" id="button-addon-2" style="height: 100%;padding: 0;backdrop-filter: opacity(1);color: rgb(0,0,0);margin: 0px;margin-right: 20px;border: 2px solid rgb(0,0,0);width: 95%;">Đăng Tin</button></li>
+                        <li class="nav-item" style="width: 45%;height: 100%;"><a class="btn btn-dark text-center" role="button" style="padding: 0;padding-top: 10px;padding-bottom: 10px;border-width: 1px;height: 100%;width: 95%;margin: 0px;" href="login.html">Đăng nhập</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
     <div class="container">
         <h1 style="font-size: 18px;margin-bottom: 0px;height: 10px;margin-top: 15px;">Sản phẩm dành cho bạn</h1>
         <div class="row product-list dev">
