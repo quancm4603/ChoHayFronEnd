@@ -61,7 +61,7 @@
                                 <div class="mb-3"><label class="form-label form-label" for="service_name"><strong>Tên sản phẩm *</strong></label><input class="form-control form-control" type="text" id="service_name" name="name" placeholder="Tên sản phẩm" required="" style="border-color:rgb(0,0,0);color:rgb(0,0,0);"></div>
                             </div>
                             <div class="col-sm-12 col-md-4 col-lg-4">
-                                <div class="mb-3"><label class="form-label form-label" for="service_price"><strong>Giá tiền *</strong></label><input class="form-control" type="number" required="" placeholder="VND"></div>
+                                <div class="mb-3"><label class="form-label form-label" for="service_price"><strong>Giá tiền *</strong></label><input class="form-control" type="number" required="" placeholder="VND" min="0"></div>
                             </div>
                         </div>
                         <div class="row" style="width: 100%;margin: 2px;padding: 0;">
@@ -83,7 +83,19 @@
                                     </select><label class="form-label form-label" style="color:#55595c;font-weight:bold;margin-top:10px;">Địa chỉ cụ thể *</label><input class="form-control form-control" type="text" name="street" placeholder="Địa chỉ cụ thể" style="color:rgb(0,0,0);"></div>
                             </div>
                         </div>
-                        <div class="mb-3" style="width: 100%;margin: 2px;padding: 0;"><label class="form-label form-label" for="client_description"><strong>Mô tả sản phẩm *</strong></label><textarea class="form-control form-control" id="service_description" name="description" placeholder="Mô tả sản phẩm" required="" rows="4" style="color:rgb(0,0,0);"></textarea></div>
+                        <div class="row justify-content-around" style="width: 100%;margin: 2px;padding: 0;">
+                            <div class="col">
+                                <div class="mb-3" style="width: 100%;margin: 2px;padding: 0;"><label class="form-label form-label" for="client_description"><strong>Mô tả sản phẩm *</strong></label><textarea class="form-control form-control" id="service_description" name="description" placeholder="Mô tả sản phẩm" required="" rows="4" style="color:rgb(0,0,0);"></textarea></div>
+                            </div>
+                            <div class="col-sm-12 col-md-8 col-lg-6 col-xxl-8" style="transform: scale(1);width: 100%;">
+                                <div class="mb-3"><label class="form-label form-label" for="service_name"><strong>Tình trạng *</strong></label><input class="form-control form-control" type="text" id="service_name-2" name="name" placeholder="Tình trạng" required="" style="border-color:rgb(0,0,0);color:rgb(0,0,0);"></div>
+                                <div class="mb-3"><label class="form-label form-label" for="service_name"><strong>Hãng *</strong></label><input class="form-control form-control" type="text" id="service_name-3" name="name" placeholder="Hãng" required="" style="border-color:rgb(0,0,0);color:rgb(0,0,0);"></div>
+                                <div class="mb-3"><label class="form-label form-label" for="service_name"><strong>Màu sắc *</strong></label><input class="form-control form-control" type="text" id="service_name-4" name="name" placeholder="Màu sắc" required="" style="border-color:rgb(0,0,0);color:rgb(0,0,0);"></div>
+                                <div class="mb-3"><label class="form-label form-label" for="service_name"><strong>Dung lượng *</strong></label><input class="form-control" type="number" placeholder="GB" min="2"></div>
+                                <div class="mb-3"><label class="form-label form-label" for="service_name"><strong>Chính sách bảo hành *</strong></label><input class="form-control form-control" type="text" id="service_name-6" name="name" placeholder="Chính sách bảo hành" required="" style="border-color:rgb(0,0,0);color:rgb(0,0,0);"></div>
+                                <div class="mb-3"><label class="form-label form-label" for="service_name"><strong>Xuất xứ *</strong></label><input class="form-control form-control" type="text" id="service_name-7" name="name" placeholder="Xuất xứ" required="" style="border-color:rgb(0,0,0);color:rgb(0,0,0);"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="text-end mb-3"><button class="btn btn-primary" type="submit">đăng tin</button><a class="btn btn-danger" role="button" href="index.html">huỷ</a></div>
