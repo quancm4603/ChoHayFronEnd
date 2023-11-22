@@ -656,3 +656,202 @@
   box-shadow: none;
 }
 
+@container (min-width: 1200px) {
+  .form-control {
+    display: block;
+    width: 40rem;
+    padding: .75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #f7f7f9;
+    background-clip: padding-box;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+}
+
+.nav-item {
+  margin-right: 1rem;
+}
+
+.btn-primary:hover {
+  color: #ffffff;
+  background-color: #a4a4a4;
+  border-color: #000000;
+}
+
+@media (max-width: 990px) {
+  .btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #1a1a1a;
+    --bs-btn-border-color: #1a1a1a;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #161616;
+    --bs-btn-hover-border-color: #151515;
+    --bs-btn-focus-shadow-rgb: 60,60,60;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #151515;
+    --bs-btn-active-border-color: #141414;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #1a1a1a;
+    --bs-btn-disabled-border-color: #1a1a1a;
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 990px) {
+  .btn-outline-primary {
+    --bs-btn-color: #1a1a1a;
+    --bs-btn-border-color: #1a1a1a;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #1a1a1a;
+    --bs-btn-hover-border-color: #1a1a1a;
+    --bs-btn-focus-shadow-rgb: 26,26,26;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #1a1a1a;
+    --bs-btn-active-border-color: #1a1a1a;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #1a1a1a;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #1a1a1a;
+    --bs-gradient: none;
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 990px) {
+  .form-control {
+    display: block;
+    width: 100%;
+    padding: .75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #f7f7f9;
+    background-clip: padding-box;
+    border: 0 solid var(--bs-border-color);
+    border-radius: 0;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    margin-top: 5px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .form-control {
+    display: block;
+    width: 40vw;
+    padding: .75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #f7f7f9;
+    background-clip: padding-box;
+    border: 0 solid var(--bs-border-color);
+    border-radius: 0;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+}
+
+@media (min-width: 1400px) {
+  .form-control {
+    display: block;
+    width: 47vw;
+    padding: .75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #f7f7f9;
+    background-clip: padding-box;
+    border: 0 solid var(--bs-border-color);
+    border-radius: 0;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+}
+
+@media (min-width:992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    /*margin-left: 30px;*/
+    padding-right: var(--bs-navbar-nav-link-padding-x);
+    padding-left: var(--bs-navbar-nav-link-padding-x);
+  }
+}
+
+.card .mb-5 {
+  margin-bottom: 3rem!important;
+}
+
+.card.mb-5 {
+  margin-bottom: 0rem!important;
+}
+
+@media (min-width: 300px) {
+  .headinglog {
+    font-weight: bold;
+    font-size: 21px;
+  }
+}
+
+@media (min-width: 576px) {
+  .headinglog {
+    font-weight: bold;
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .form-register {
+    width: 85%;
+  }
+}
+
+@media (min-width: 300px) {
+  .form-register {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .form-register {
+    width: 90%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .form-register {
+    width: 85%;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (min-width: 300px) {
+  .ctk-login {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 576px) {
+  .ctk-login {
+    font-size: 16px;
+  }
+}
+
