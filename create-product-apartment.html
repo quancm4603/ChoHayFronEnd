@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;500;600;700&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="assets/css/swiper-icons.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
 </head>
 
@@ -33,17 +34,17 @@
             </div>
         </nav>
     </header>
-    <div style="width:100%;height:100%;">
+    <div style="width: 100%;height: 100%;font-weight: bold;">
         <div class="container-fluid" style="width: 100%;max-width: 60%;padding: 0;padding-top: 15px;padding-bottom: 15px;height: 100%;">
             <form style="width:100%;height:100%;">
                 <div class="card shadow mb-3" style="width: 100%;height: 100%;margin: 0;">
                     <div class="card-header py-3" style="width: 100%;height: 100%;padding: 0;">
-                        <p class="fs-4 fw-bolder text-start text-primary m-0 fw-bold">Tạo sản phẩm</p>
+                        <p class="fs-4 fw-bolder text-start text-primary m-0 fw-bold" style="font-weight: bold;"><strong>Tạo sản phẩm</strong></p>
                     </div>
                     <div class="card-body" style="width: 100%;height: 100%;min-height: 0px;padding: 0;margin: 0;">
                         <div class="row" style="width: 100%;margin: 2px;padding: 0;">
                             <div class="col-sm-12 col-md-8 col-lg-8 col-xxl-7" style="transform:scale(1);width:100%;height:100%;">
-                                <div class="mb-3" style="width: 100%;"><label class="form-label form-label" for="service_name"><strong>Danh mục tin đăng *</strong></label><select class="form-select form-select" required="" style="color:rgb(0,0,0);">
+                                <div class="mb-3" style="width: 100%;"><label class="form-label form-label" for="service_name" style="font-weight: bold;"><strong>Danh mục tin đăng *</strong></label><select class="form-select form-select" required="" style="color:rgb(0,0,0);">
                                         <option value="ApartmentDetails">Căn hộ</option>
                                         <option value="PhoneDetails">Điên thoại</option>
                                         <option value="DogDetails">Chó</option>
@@ -52,18 +53,18 @@
                         </div>
                         <div class="row" style="width: 100%;margin: 2px;padding: 0;">
                             <div class="col-sm-12 col-md-8 col-lg-8 col-xxl-8" style="transform:scale(1);">
-                                <div class="mb-3" style="width: 100%;"><label class="form-label form-label" for="service_name"><strong>Tên sản phẩm *</strong></label><input class="form-control form-control" type="text" id="service_name" name="name" placeholder="Tên sản phẩm" required="" style="border-color: rgb(0,0,0);color: rgb(0,0,0);width: 100%;"></div>
+                                <div class="mb-3" style="width: 100%;font-weight: bold;"><label class="form-label form-label" for="service_name" style="font-weight: bold;"><strong>Tên sản phẩm *</strong></label><input class="form-control form-control" type="text" id="service_name" name="name" placeholder="Tên sản phẩm" required="" style="border-color: rgb(0,0,0);color: rgb(0,0,0);width: 100%;"></div>
                             </div>
                             <div class="col-sm-12 col-md-4 col-lg-4">
-                                <div class="mb-3" style="width: 100%;"><label class="form-label form-label" for="service_price"><strong>Giá tiền *</strong></label><input class="form-control" type="number" required="" placeholder="VND" style="width: 100%;"></div>
+                                <div class="mb-3" style="width: 100%;"><label class="form-label form-label" for="service_price" style="font-weight: bold;"><strong>Giá tiền *</strong></label><input class="form-control" type="number" required="" placeholder="VND" style="width: 100%;"></div>
                             </div>
                         </div>
                         <div class="row" style="width: 100%;margin: 2px;padding: 0;">
                             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6" style="transform:scale(1);">
-                                <div class="mb-3" style="width: 100%;"><label class="form-label form-label" for="service_name" style="color:#55595c;"><strong>Số điện thoại *</strong></label><input class="form-control form-control" type="tel" id="service_name-1" name="phone" placeholder="Số điện thoại" required="" style="border-color: rgb(0,0,0);color: rgb(0,0,0);width: 100%;"></div>
+                                <div class="mb-3" style="width: 100%;"><label class="form-label form-label" for="service_name" style="color: #55595c;font-weight: bold;"><strong>Số điện thoại *</strong></label><input class="form-control form-control" type="tel" id="service_name-1" name="phone" placeholder="Số điện thoại" required="" style="border-color: rgb(0,0,0);color: rgb(0,0,0);width: 100%;"></div>
                             </div>
                             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                                <div class="mb-3" style="width: 100%;"><label class="form-label form-label form-label" for="image"><strong>Hình ảnh *</strong></label><input class="form-control form-control" type="file" id="image" name="image" placeholder="Hình ảnh" required="" style="width: 100%;"></div>
+                                <div class="mb-3" style="width: 100%;"><label class="form-label form-label form-label" for="image" style="font-weight: bold;"><strong>Hình ảnh *</strong></label><input class="form-control form-control" type="file" id="image" name="image" placeholder="Hình ảnh" required="" style="width: 100%;"></div>
                             </div>
                         </div>
                         <div class="row" style="width: 100%;margin: 2px;padding: 0;">
@@ -79,12 +80,12 @@
                         </div>
                         <div class="row justify-content-around" style="width: 100%;margin: 2px;padding: 0;">
                             <div class="col-sm-12 col-md-8 col-lg-6 col-xxl-8" style="transform: scale(1);width: 100%;">
-                                <div class="mb-3" style="width: 100%;"><label class="form-label form-label" for="service_name"><br><strong>Mô tả sản phẩm&nbsp;*</strong></label><textarea class="form-control form-control" id="service_description-1" name="description" placeholder="Mô tả sản phẩm" required="" rows="4" style="color: rgb(0,0,0);width: 100%;"></textarea></div>
+                                <div class="mb-3" style="width: 100%;"><label class="form-label form-label" for="service_name" style="font-weight: bold;"><br><strong>Mô tả sản phẩm&nbsp;*</strong></label><textarea class="form-control form-control" id="service_description-1" name="description" placeholder="Mô tả sản phẩm" required="" rows="4" style="color: rgb(0,0,0);width: 100%;"></textarea></div>
                             </div>
                         </div>
                         <div class="row justify-content-around" style="width: 100%;margin: 2px;padding: 0;">
                             <div class="col-sm-12 col-md-8 col-lg-6 col-xxl-8" style="transform: scale(1);width: 100%;">
-                                <div class="mb-3" style="width: 100%;"><label class="form-label form-label" for="service_name"><strong>Loại hình căn hộ *</strong></label><select class="form-select form-select" required="" style="color:rgb(0,0,0);">
+                                <div class="mb-3" style="width: 100%;"><label class="form-label form-label" for="service_name" style="font-weight: bold;"><strong>Loại hình căn hộ *</strong></label><select class="form-select form-select" required="" style="color:rgb(0,0,0);">
                                         <option value="Apartment">Chung cư</option>
                                         <option value="Duplex">Duplex</option>
                                         <option value="Penthouse">Penthouse</option>
@@ -97,17 +98,17 @@
                                 <div class="mb-3"><label class="form-label form-label" for="service_name" style="font-weight: bold;">Số phòng ngủ *</label><input class="form-control" type="number" required="" placeholder="Số phòng ngủ" min="0" step="1" style="width: 100%;"></div>
                             </div>
                             <div class="col-sm-12 col-md-8 col-lg-6 col-xxl-8" style="transform: scale(1);width: 50%;">
-                                <div class="mb-3"><label class="form-label form-label" for="service_name"><strong>Số phòng vệ sinh *</strong></label><input class="form-control" type="number" required="" placeholder="Số phòng vệ sinh" min="0" step="1" style="width: 100%;"></div>
+                                <div class="mb-3"><label class="form-label form-label" for="service_name" style="font-weight: bold;"><strong>Số phòng vệ sinh *</strong></label><input class="form-control" type="number" required="" placeholder="Số phòng vệ sinh" min="0" step="1" style="width: 100%;"></div>
                             </div>
                             <div class="col-sm-12 col-md-8 col-lg-6 col-xxl-8" style="transform: scale(1);width: 50%;">
-                                <div class="mb-3" style="width: 100%;"><label class="form-label form-label" for="service_name"><strong>Giấy tờ pháp lý *</strong></label><select class="form-select form-select" required="" style="color: rgb(0,0,0);width: 100%;">
+                                <div class="mb-3" style="width: 100%;"><label class="form-label form-label" for="service_name" style="font-weight: bold;"><strong>Giấy tờ pháp lý *</strong></label><select class="form-select form-select" required="" style="color: rgb(0,0,0);width: 100%;">
                                         <option value="Already have house book">Đã có sổ</option>
                                         <option value="waiting for house book">Đang có sổ</option>
                                         <option value="Other">Giấy tờ khác</option>
                                     </select></div>
                             </div>
                             <div class="col-sm-12 col-md-8 col-lg-6 col-xxl-8" style="transform: scale(1);width: 50%;">
-                                <div class="mb-3" style="width: 100%;"><label class="form-label form-label" for="service_name"><strong>Tình trạng nội thất *</strong></label><select class="form-select form-select" required="" style="color: rgb(0,0,0);width: 100%;">
+                                <div class="mb-3" style="width: 100%;"><label class="form-label form-label" for="service_name" style="font-weight: bold;"><strong>Tình trạng nội thất *</strong></label><select class="form-select form-select" required="" style="color: rgb(0,0,0);width: 100%;">
                                         <option value="Luxury furniture">Nội thất cao cấp</option>
                                         <option value="Full furniture">Nội thất đây đủ</option>
                                         <option value="No furniture">Nhà trống</option>
@@ -116,7 +117,7 @@
                         </div>
                         <div class="row">
                             <div class="col">
-                                <div class="mb-3" style="width: 100%;"><label class="form-label form-label" for="service_name"><strong>Diện tích *</strong></label><input class="form-control" type="number" required="" placeholder="m2" style="width: 100%;" min="0"></div>
+                                <div class="mb-3" style="width: 100%;"><label class="form-label form-label" for="service_name" style="font-weight: bold;"><strong>Diện tích *</strong></label><input class="form-control" type="number" required="" placeholder="m2" style="width: 100%;" min="0"></div>
                             </div>
                         </div>
                     </div>

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;500;600;700&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="assets/css/swiper-icons.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
 </head>
 
@@ -33,17 +34,17 @@
             </div>
         </nav>
     </header>
-    <div style="width:100%;height:100%;">
-        <div class="container-fluid" style="width: 100%;max-width: 60%;padding: 0;padding-top: 15px;padding-bottom: 15px;height: 100%;">
+    <div>
+        <div class="container-fluid taosanpham" style="margin-top: 15px;">
             <form style="width:100%;height:100%;">
                 <div class="card shadow mb-3" style="width: 100%;height: 100%;margin: 0;">
-                    <div class="card-header py-3" style="width: 100%;height: 100%;padding: 0;">
-                        <p class="fs-4 fw-bolder text-start text-primary m-0 fw-bold">Tạo sản phẩm</p>
+                    <div class="card-header py-3">
+                        <p class="fs-4 fw-bolder text-start text-primary m-0 fw-bold" style="font-weight: bold;"><strong>Tạo sản phẩm</strong></p>
                     </div>
-                    <div class="card-body" style="width: 100%;height: 100%;min-height: 0px;padding: 0;margin: 0;">
+                    <div class="card-body" style="padding: 0px;">
                         <div class="row" style="width: 100%;margin: 2px;padding: 0;">
                             <div class="col-sm-12 col-md-8 col-lg-8 col-xxl-7" style="transform:scale(1);width:100%;height:100%;">
-                                <div class="mb-3"><label class="form-label form-label" for="service_name"><strong>Danh mục tin đăng *</strong></label><select class="form-select form-select" required="" style="color:rgb(0,0,0);">
+                                <div class="mb-3"><label class="form-label form-label" for="service_name" style="font-weight: bold;"><strong>Danh mục tin đăng *</strong></label><select class="form-select form-select" required="" style="color:rgb(0,0,0);">
                                         <option value="ApartmentDetails">Căn hộ</option>
                                         <option value="PhoneDetails">Điên thoại</option>
                                         <option value="DogDetails">Chó</option>
@@ -52,39 +53,43 @@
                         </div>
                         <div class="row" style="width: 100%;margin: 2px;padding: 0;">
                             <div class="col-sm-12 col-md-8 col-lg-8 col-xxl-8" style="transform:scale(1);">
-                                <div class="mb-3"><label class="form-label form-label" for="service_name"><strong>Tên sản phẩm *</strong></label><input class="form-control form-control" type="text" id="service_name" name="name" placeholder="Tên sản phẩm" required="" style="border-color: rgb(0,0,0);color: rgb(0,0,0);width: 100%;"></div>
+                                <div class="mb-3"><label class="form-label form-label" for="service_name" style="font-weight: bold;"><strong>Tên sản phẩm *</strong></label><input class="form-control form-control" type="text" id="service_name" name="name" placeholder="Tên sản phẩm" required="" style="border-color: rgb(0,0,0);color: rgb(0,0,0);width: 100%;"></div>
                             </div>
                             <div class="col-sm-12 col-md-4 col-lg-4">
-                                <div class="mb-3"><label class="form-label form-label" for="service_price"><strong>Giá tiền *</strong></label><input class="form-control" type="number" required="" placeholder="VND" style="width: 100%;"></div>
+                                <div class="mb-3"><label class="form-label form-label" for="service_price" style="font-weight: bold;"><strong>Giá tiền *</strong></label><input class="form-control" type="number" required="" placeholder="VND" style="width: 100%;"></div>
                             </div>
                         </div>
                         <div class="row" style="width: 100%;margin: 2px;padding: 0;">
                             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6" style="transform:scale(1);">
-                                <div class="mb-3"><label class="form-label form-label" for="service_name" style="color:#55595c;"><strong>Số điện thoại *</strong></label><input class="form-control form-control" type="tel" id="service_name-1" name="phone" placeholder="Số điện thoại" required="" style="border-color: rgb(0,0,0);color: rgb(0,0,0);width: 100%;"></div>
+                                <div class="mb-3"><label class="form-label form-label" for="service_name" style="color: #55595c;font-weight: bold;"><strong>Số điện thoại *</strong></label><input class="form-control form-control" type="tel" id="service_name-1" name="phone" placeholder="Số điện thoại" required="" style="border-color: rgb(0,0,0);color: rgb(0,0,0);width: 100%;"></div>
                             </div>
                             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                                <div class="mb-3"><label class="form-label form-label form-label" for="image"><strong>Hình ảnh *</strong></label><input class="form-control form-control" type="file" id="image" name="image" placeholder="Hình ảnh" required="" style="width: 100%;"></div>
+                                <div class="mb-3"><label class="form-label form-label form-label" for="image" style="font-weight: bold;"><strong>Hình ảnh *</strong></label><input class="form-control form-control" type="file" id="image" name="image" placeholder="Hình ảnh" required="" style="width: 100%;"></div>
                             </div>
                         </div>
                         <div class="row" style="width: 100%;margin: 2px;padding: 0;">
                             <div class="col">
-                                <div><label class="form-label form-label" style="color:#55595c;font-weight:bold;">Tỉnh, thành phố *</label><select class="form-select form-select-sm form-select form-select mb-3" aria-label=".form-select-sm" id="city">
+                                <div style="margin-bottom: 10px;"><label class="form-label form-label" style="color:#55595c;font-weight:bold;">Tỉnh, thành phố *</label><select class="form-select form-select form-select mb-3" aria-label=".form-select-sm" id="city">
                                         <option value="" selected="">Chọn tỉnh thành</option>
-                                    </select><label class="form-label form-label" style="color:#55595c;font-weight:bold;">Quận, huyện, thị xã *</label><select class="form-select form-select-sm form-select form-select mb-3" aria-label=".form-select-sm" id="district">
+                                    </select><label class="form-label form-label" style="color:#55595c;font-weight:bold;">Quận, huyện, thị xã *</label><select class="form-select form-select form-select mb-3" aria-label=".form-select-sm" id="district">
                                         <option value="" selected="">Chọn quận huyện</option>
-                                    </select><label class="form-label form-label" style="color:#55595c;font-weight:bold;">Phường, xã, thị trấn *</label><select class="form-select form-select-sm form-select form-select" aria-label=".form-select-sm" id="ward">
+                                    </select><label class="form-label form-label" style="color:#55595c;font-weight:bold;">Phường, xã, thị trấn *</label><select class="form-select form-select form-select" aria-label=".form-select-sm" id="ward">
                                         <option value="" selected="">Chọn phường xã</option>
                                     </select><label class="form-label form-label" style="color:#55595c;font-weight:bold;margin-top:10px;">Địa chỉ cụ thể *</label><input class="form-control form-control" type="text" name="street" placeholder="Địa chỉ cụ thể" style="color: rgb(0,0,0);width: 100%;"></div>
                             </div>
                         </div>
-                        <div class="mb-3" style="width: 100%;margin: 0px;padding: 0;"><label class="form-label form-label" for="client_description"><strong>Mô tả sản phẩm *</strong></label><textarea class="form-control form-control" id="service_description" name="description" placeholder="Mô tả sản phẩm" required="" rows="4" style="color: rgb(0,0,0);width: 100%;margin: 0px;margin-right: 0px;"></textarea></div>
+                        <div class="row" style="padding: 0px;width: 100%;margin: 2px;">
+                            <div class="col">
+                                <div class="mb-3"><label class="form-label form-label" for="client_description" style="font-weight: bold;"><strong>Mô tả sản phẩm *</strong></label><textarea class="form-control form-control" id="service_description" name="description" placeholder="Mô tả sản phẩm" required="" rows="4" style="color: rgb(0,0,0);width: 100%;"></textarea></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="text-end mb-3"><button class="btn btn-primary" type="submit" style="margin: 0px;">đăng tin</button><a class="btn btn-danger" role="button" href="index.html">huỷ</a></div>
             </form>
         </div>
     </div>
-    <footer class="text-center" style="background:#ffffff;">
+    <footer class="text-center" style="background: #ffffff;">
         <div class="container text-muted py-4 py-lg-5" style="padding:0px 12px;">
             <ul class="list-inline">
                 <li class="list-inline-item list-inline-item me-4"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewbox="0 0 16 16" class="bi bi-facebook"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path></svg></li>
