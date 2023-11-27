@@ -1029,3 +1029,59 @@ a {
   transition: 200ms;
 }
 
+@media (min-width: 300px) {
+  .size {
+    width: 100%;
+  }
+}
+
+@media (min-width: 576px) {
+  .size {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .size {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .size {
+    width: 55rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .size {
+    width: 60rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .di {
+    /*min-width: 540px;*/
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .di {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .di {
+    max-width: 960px;
+    min-width: 925px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .di {
+    min-width: 936px;
+  }
+}
+
