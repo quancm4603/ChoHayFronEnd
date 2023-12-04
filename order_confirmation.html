@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>ChoHay</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;500;600;700&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="assets/css/swiper-icons.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+</head>
+
+<body style="background: rgb(242,242,242);">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid"><a class="navbar-brand" href="index.html" style="font-weight: bold;font-size: 24px;">chohay</a><button data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">Danh mục</a>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="#">Thời trang</a><a class="dropdown-item" href="#">Đồ điện tử</a><a class="dropdown-item" href="#">Thú cưng</a></div>
+                        </li>
+                    </ul>
+                    <form class="d-flex mx-auto" role="search"><input class="form-control me-2" type="search" aria-label="Search" placeholder="Tìm kiếm sản phẩm trên Chợ Hay"><button class="btn btn-outline-primary" type="submit" style="border-width: 2px;padding-top: 5px;padding-bottom: 5px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-search" style="font-size: 24px;">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
+                            </svg></button></form>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="btn btn-outline-primary" role="button" href="create-product.html" style="padding-top: 10px;padding-bottom: 10px;width: 143px;/*margin-bottom: 0px;*//*margin-top: 0px;*/">đăng tin</a></li>
+                        <li class="nav-item"><a class="btn btn-primary" role="button" href="login.html" style="width: 143px;">đăng nhập</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div style="margin: 0px;margin-top: 10px;margin-bottom: 10px;">
+        <div class="container orderconfirm" style="padding-right: 0px;padding-left: 0px;">
+            <div class="row g-0" style="margin: 0px;padding: 0px;">
+                <div class="col">
+                    <div class="BuyNow_depositBlock__2Du5S">
+                        <p class="xacnhan" style="color: rgb(0,0,0);">Xác nhận đơn hàng</p>
+                        <div class="BuyNow_announcementBox__SA5_X"><img src="https://static.chotot.com/storage/escrow/icons/buy_protection.svg" alt="announce" style="border-style:none;">
+                            <aside style="margin-left:12px;display:block;"><span style="font-weight: bold;color: #000000;">Thanh toán đảm bảo an toàn qua Chợ Hay</span><br><span style="color: #000000;">Hoàn tiền 100% nếu không nhận được hàng</span></aside>
+                        </div>
+                        <div class="DeliveryAddress_blockHeading__A4Mez" style="margin-bottom:0px;margin-top:18px;"><img src="https://static.chotot.com/storage/escrow/icons/location_v2.svg" alt="location"><span style="font-weight: bold;margin-left: 5px;color: #000000;">Địa chỉ Người nhận</span></div>
+                        <div class="text-start" style="padding-right: 24px;padding-left: 24px;padding-top: 7px;padding-bottom: 7px;"><label class="form-label form-label form-label form-label" style="color: #000000;font-weight: bold;">Tỉnh, thành phố *</label><select aria-label=".form-select-sm" class="form-select form-select form-select form-select mb-3" id="city">
+                                <option value="" selected="">Chọn tỉnh thành</option>
+                            </select><label class="form-label form-label form-label form-label" style="color: #000000;font-weight: bold;">Quận, huyện, thị xã *</label><select aria-label=".form-select-sm" class="form-select form-select form-select form-select mb-3" id="district">
+                                <option value="" selected="">Chọn quận huyện</option>
+                            </select><label class="form-label form-label form-label form-label" style="color: #000000;font-weight: bold;">Phường, xã, thị trấn *</label><select aria-label=".form-select-sm" class="form-select form-select form-select form-select" id="ward">
+                                <option value="" selected="">Chọn phường xã</option>
+                            </select><label class="form-label form-label form-label form-label" style="color: #000000;font-weight: bold;margin-top: 10px;">Địa chỉ cụ thể *</label><input type="text" id="street" class="form-control form-control form-control" name="street" placeholder="Địa chỉ cụ thể" style="color:rgb(0,0,0);width:100%;"></div>
+                    </div>
+                    <div class="BuyNow_depositBlock__2Du5S">
+                        <div class="AdDetail_adInfo___BEZX">
+                            <div class="AdDetail_adInfoHeader__UIEP3">
+                                <div class="AdDetail_adInfoAuthor__wmfQc">
+                                    <picture>
+                                        <source srcset="https://cdn.chotot.com/j-yFcfH-egwxayNAD5tSPXOaDv5SVxy92xofBGZ0bPA/preset:uac/plain/617d9271b1f5d41318f11f628d185e1f-2676485200758880210.jpg" type="image/jpg"><img alt="avatar" src="https://static.chotot.com/storage/chotot-icons/svg/user.svg">
+                                    </picture><span style="color: rgb(0,0,0);">Bông Xù</span>
+                                </div><a class="chat" style="color: rgb(0,0,0);"><span><img src="https://static.chotot.com/storage/escrow/icons/chat.svg" alt="chat"></span>&nbsp;Chat</a>
+                            </div>
+                            <div class="AdDetail_adInfoBody__7JodI">
+                                <picture>
+                                    <source srcset="https://cdn.chotot.com/85ycTNJDS2zXrztOW1xm6YJyh9TN9BDC99r_GHjPuok/preset:listing/plain/4ec47bd40b91f1a8abc4f2026383d466-2739367689419091345.jpg" type="image/jpg"><img alt="avatar" src="https://static.chotot.com/storage/default_images/c2c_ad_image.webp">
+                                </picture>
+                                <section>
+                                    <p style="color: rgb(0,0,0);">Poodle tiny thuần chủng nhà đẻ</p><span style="font-weight: bold;color: #d0021b;">2.000.000đ</span>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="BuyNow_depositBlock__2Du5S">
+                        <div class="OrderType_blockHeading__zhddD"><img src="https://static.chotot.com/storage/escrow/icons/shopping_bag_v2.svg" alt="shopping"><span style="font-weight: bold;color: rgb(0,0,0);">&nbsp;Số tiền thanh toán</span></div>
+                        <div class="OrderType_checkboxWrapper__5OYiC"><button type="button" class="OrderType_orderType__2mv_D"><div class="OrderType_orderTypeLabel__PkaYS"><b>Thanh toán</b>
+    <div width="xs" class="r1ttq5qi" style="--r1ttq5qi-0:30px;"><label class="primary s1xi7pki"><input id="orderType_2"
+                name="orderType" type="radio" value="2" checked=""><span class="radio"></span></label></div>
+</div><b>2.000.000đ</b><small>Thanh toán toàn bộ số tiền</small></button><button type="button" class="OrderType_orderType__2mv_D"><div class="OrderType_orderTypeLabel__PkaYS"><b>Đặt cọc</b>
+    <div width="xs" class="r1ttq5qi" style="--r1ttq5qi-0:30px;"><label class="primary s1xi7pki"><input id="orderType_1"
+                name="orderType" type="radio" value="1"><span class="radio"></span></label></div>
+</div><b>200.000đ</b><small>Số tiền còn lại tự thanh toán với người bán</small></button></div>
+                        <div class="OrderType_protectedBuy__pSeNM"><img src="https://static.chotot.com/storage/escrow/icons/verified_user.svg" alt="protected">
+                            <p style="color: rgb(0,0,0);">Số tiền thanh toán được đảm bảo trong <span style="color: rgb(0,0,0);font-weight: bold;">7 ngày</span> hoặc đến khi bạn nhận được hàng.</p>
+                        </div>
+                    </div>
+                    <div class="BuyNow_depositBlock__2Du5S">
+                        <div class="DeliveryMethod_blockHeading__j8mDT"><img src="https://static.chotot.com/storage/escrow/icons/delivery_dining_v2.svg" alt="delivery_dining"><span style="color: rgb(0,0,0);font-weight: bold;">&nbsp;Phương thức Giao hàng</span></div>
+                        <div class="DeliveryMethod_deliveryMethod__H7U35"><img src="https://static.chotot.com/storage/escrow/icons/forum.svg" alt="forum">
+                            <section>
+                                <p>Tự thỏa thuận phí giao hàng</p>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="BuyNow_depositBlock__2Du5S">
+                        <div class="PaymentMethod_blockHeading__W_Sru"><img src="https://static.chotot.com/storage/escrow/icons/payment_method_v2.svg" alt="payment_method"><span style="font-weight: bold;color: rgb(0,0,0);">&nbsp;Phương thức Thanh toán</span></div>
+                        <div class="PaymentMethod_paymentMethod__H_S1g"><img src="assets/img/tienmat.png" width="24" alt="payment" height="24">
+                            <p style="color: rgb(0,0,0);">&nbsp; Thanh toán khi nhận hàng</p>
+                        </div>
+                    </div>
+                    <div class="BuyNow_depositBlock__2Du5S BuyNow_sawTooth__o0iec">
+                        <div>
+                            <div class="CheckoutDescription_blockHeading__Je1tp"><span style="font-weight: bold;">Thông tin Thanh toán</span></div>
+                            <div class="CheckoutDescription_blockCalculate__PacGy">
+                                <p style="color: rgb(0,0,0);">Số tiền</p><span style="color: rgb(0,0,0);">2.000.000đ </span>
+                            </div>
+                            <div style="height:1px;width:100%;border:1px dashed rgb(34, 34, 34);margin:12px 0px;"></div>
+                            <div class="CheckoutDescription_blockCalculate__PacGy CheckoutDescription_blockCalculateTotal__K7__h">
+                                <p style="color: rgb(0,0,0);">Tổng thanh toán</p><span style="color: rgb(0,0,0);font-weight: bold;">2.000.000đ</span>
+                            </div><br>
+                            <div class="CheckoutDescription_blockHeading__Je1tp"><img src="https://static.chotot.com/storage/escrow/icons/sticky_note.svg" alt="sticky_note"><span style="color: rgb(0,0,0);font-weight: bold;">&nbsp;Ghi chú</span></div>
+                            <div class="c1tydqxk" style="--c1tydqxk-0:100%;">
+                                <div class="t1dkrvxv" style="--t1dkrvxv-5:76px;">
+                                    <div class="focus-capture"></div><textarea class="s1vhbdc8" id="overview" inputmode="text" name="overview"></textarea><label class="form-label" for="overview">Nhập ghi chú cho người bán</label>
+                                </div>
+                                <p class="p1caxrzq"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="BuyNow_depositBlock__2Du5S" style="padding-bottom: 9px;margin-bottom: 0px;">
+                        <div class="Policy_policyWrapper__TwZLN">
+                            <p style="color: rgb(0,0,0);">Bằng việc bấm <span style="font-weight: bold;">Đặt hàng</span>, bạn đã đọc, hiểu rõ và đồng ý với Chính sách mua hàng của Chợ Hay.</p>
+                        </div><br>
+                        <div class="TotalAmount_totalAmountWrapper__dbGTZ">
+                            <p>TỔNG CỘNG: <br><b>2.000.000đ</b></p>
+                            <div class="text-end div-button TotalAmount_button__q6X_0"><button class="btn btn-primary btnorder" type="submit">đặt hàng</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center" style="background: #ffffff;">
+        <div class="container text-muted py-4 py-lg-5 footerfixed">
+            <ul class="list-inline">
+                <li class="list-inline-item me-4"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-facebook">
+                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path>
+                    </svg></li>
+                <li class="list-inline-item me-4"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-twitter">
+                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"></path>
+                    </svg></li>
+                <li class="list-inline-item"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-instagram">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path>
+                    </svg></li>
+            </ul>
+            <p class="mb-0">Copyright © 2023 CHOHAY</p>
+        </div>
+    </footer>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <script src="assets/js/address.js"></script>
+    <script src="assets/js/confimpassword.js"></script>
+</body>
+
+</html>
