@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>ChoHay</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.2/dist/lux/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;500;600;700&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+</head>
+
+<body style="background: #f2f2f2;">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light d-xxl-flex justify-content-xxl-center align-items-xxl-center" style="padding-top: 15px;padding-bottom: 15px;">
+            <div class="container-fluid"><a class="navbar-brand d-xxl-flex justify-content-xxl-center align-items-xxl-center" href="./" style="font-weight: bold;font-size: 24px;">chohay</a><button data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">Danh mục</a>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="./search?category=Apartment">Căn hộ</a><a class="dropdown-item" href="./search?category=Phone">Điện thoại</a><a class="dropdown-item" href="./search?category=Dog">Chó</a></div>
+                        </li>
+                    </ul>
+                    <form class="d-flex mx-auto" method="get" action="./search" role="search" style="width: 100%;"><input class="form-control me-2" type="search" aria-label="Search" name="keyword" placeholder="Tìm kiếm sản phẩm trên Chợ Hay" style="padding:5px 24px;"><button class="btn btn-outline-primary d-xxl-flex justify-content-xxl-center align-items-xxl-center" type="submit" id="button-addon-1" style="padding-top:4px;padding-bottom:4px;border-width:1px;padding-right:16px;padding-left:16px;"><svg class="bi bi-search" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewbox="0 0 16 16" style="font-size:24px;"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path></svg></button></form>
+                    <ul class="navbar-nav d-lg-flex ms-auto justify-content-lg-center align-items-lg-center mb-2 mb-lg-0">
+                        <li class="nav-item d-xl-flex justify-content-xl-center align-items-xl-center bag" style="padding: 3px;">
+                            <div class="nav-item dropdown d-lg-flex d-xxl-flex justify-content-lg-center align-items-lg-center justify-content-xxl-center align-items-xxl-center" style="margin-right: 0px;width: 100%;height: 100%;"><a class="d-xl-flex justify-content-xl-center align-items-xl-center" aria-expanded="false" data-bs-toggle="dropdown" href="#"><i class="icon ion-bag d-lg-flex d-xl-flex d-xxl-flex justify-content-lg-center align-items-lg-center justify-content-xl-center align-items-xl-center justify-content-xxl-center align-items-xxl-center bi-bag"></i></a>
+                                <div class="dropdown-menu"><a class="dropdown-item" href="./order-status">Đơn mua</a><a class="dropdown-item" href="./sell-status">Đơn bán</a></div>
+                            </div>
+                        </li>
+                        <li class="nav-item d-flex justify-content-xxl-center align-items-xxl-center quanlytin" style="width: 100%;height: 100%;padding: 5px;"><a class="nav-link d-lg-flex d-xxl-flex justify-content-lg-center align-items-lg-center justify-content-xxl-center align-items-xxl-center" href="./product-manager" style="padding: 0px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-layout-text-window-reverse icoquanly">
+                                    <path d="M13 6.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 .5-.5zm0 3a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 .5-.5zm-.5 2.5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1h5z"></path>
+                                    <path d="M14 0a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12zM2 1a1 1 0 0 0-1 1v1h14V2a1 1 0 0 0-1-1H2zM1 4v10a1 1 0 0 0 1 1h2V4H1zm4 0v11h9a1 1 0 0 0 1-1V4H5z"></path>
+                                </svg><span class="text-capitalize spanquanly" style="line-height: 15px;">quản lý tin</span></a></li>
+                        <li class="nav-item d-flex justify-content-xxl-center align-items-xxl-center quanlytin" style="width: 100%;height: 100%;padding: 5px;"><a class="nav-link d-lg-flex d-xxl-flex justify-content-lg-center align-items-lg-center justify-content-xxl-center align-items-xxl-center" href="./user" style="padding: 0px;"><img class="rounded-circle" style="width: 24px;height: 24px;" src="https://p7.hiclipart.com/preview/782/114/405/5bbc3519d674c.jpg"><span class="text-capitalize spanquanly" style="line-height: 15px;overflow: hidden;width: 16vh;text-overflow: ellipsis;">Nguyễn gia anh tuấn</span></a></li>
+                        <li class="nav-item d-lg-flex d-xxl-flex justify-content-lg-center align-items-lg-center align-items-xxl-center"><a class="btn btn-outline-primary" role="button" href="./create-product" style="line-height: 12px;border-width: 1px;padding-bottom: 10px;padding-top: 10px;width: 100%;">đăng tin</a></li>
+                        <li class="nav-item d-lg-flex d-xxl-flex justify-content-lg-center align-items-lg-center align-items-xxl-center" style="margin-right: 0px;"><a class="btn btn-primary" role="button" href="./login" style="width: 100%;line-height: 10px;padding-top: 13px;padding-bottom: 13px;">đăng nhập</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div style="margin-top: 10px;margin-bottom: 10px;">
+        <div class="container containerhome">
+            <div class="row" style="margin: 0px;padding: 0px;">
+                <div class="col" style="padding: 0px;">
+                    <ul class="list-inline duongdan">
+                        <li class="list-inline-item"><a href="./" style="color: #306bd9;font-size: 14px;">Chợ hay</a><span style="letter-spacing: -7px;">ㅤ&gt;ㅤ</span></li>
+                        <li class="list-inline-item"><span style="font-size: 14px;">Trang cá nhân của Thánh Lừa Đảo</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container justify-content-center justify-content-xxl-center containerhome">
+            <div class="row" style="width: 100%;margin: 0px;padding: 0px;">
+                <div class="col-12 col-lg-4 col-xl-4 col-xxl-4" style="background: #ffffff;padding-top: 12px;padding-bottom: 12px;margin-right: 0px;margin-left: 0px;">
+                    <div style="background: #ffffff;position: relative;">
+                        <div><img style="object-fit:cover;margin:0px;margin-left:0px;margin-right:0px;height:125px;width:100%;" src="https://scontent.xx.fbcdn.net/v/t1.15752-9/385538324_1390932391824938_2390860457593034056_n.jpg?_nc_cat=111&amp;ccb=1-7&amp;_nc_sid=510075&amp;_nc_ohc=k4-9NZC-k4YAX-wAh2p&amp;_nc_ad=z-m&amp;_nc_cid=0&amp;_nc_ht=scontent.xx&amp;oh=03_AdT9Dvjiz9zsw0kzGoOvDZFoeYLoJe485o2YX5-5ylHjWw&amp;oe=6597A63A" width="288" height="125">
+                            <form action="" enctype="multipart/form-data"><input type="file" hidden="" id="avatar-1"><label class="form-label" for="avatar" style="position: absolute;left: 68px;bottom: 0;background: white;border-radius: 50%;padding: 4px;display: flex;align-items: center;justify-content: center;margin-bottom: 0;box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.05);cursor: pointer;"><i class="material-icons">camera_alt</i></label></form>
+                        </div>
+                        <div style="position: absolute;right: 0;left: 16px;bottom: -48px;"><img style="width: 96px;height: 96px;object-fit: cover;border-radius: 50%;" src="https://i.pinimg.com/474x/7c/db/3e/7cdb3e40d6dedfc8dcde7c2ddf0abcf6.jpg"></div>
+                    </div>
+                    <div style="margin-top: 60px;">
+                        <h2 class="text-capitalize" style="font-size:18px;margin-bottom:0px;margin-top:5px;font-weight:bold;">Thánh Lừa đảo</h2><span style="font-size:14px;color:rgb(0,0,0);">Chưa có đánh giá</span>
+                        <div class="d-flex d-xl-flex align-items-center align-items-xl-center" style="margin-top:3px;margin-bottom:3px;"><i class="material-icons" style="font-size:20px;">phone_iphone</i><span style="margin-left:0px;font-size:14px;color:rgb(0,0,0);">&nbsp;09699999989</span></div>
+                        <div class="d-flex d-xl-flex align-items-center align-items-xl-center" style="margin-bottom:3px;"><i class="material-icons" style="font-size:20px;">location_on</i><span style="font-size:14px;color:rgb(0,0,0);">&nbsp;Địa chỉ:&nbsp;</span><span style="font-size:14px;color:rgb(0,0,0);">Quy Nhơn, Bình Định</span></div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-8" style="padding: 12px;background: #ffffff;margin-left: 0px;">
+                    <div class="align-items-xxl-center">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item" role="presentation"><a class="nav-link active" role="tab" data-bs-toggle="tab" href="#tab-1">Đang hiển thị&nbsp;<span>(3)</span></a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#tab-2">Đã bán&nbsp;<span>(0)</span></a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active" role="tabpanel" id="tab-1">
+                                <div class="row">
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 formhome" style="background:#ffffff;padding:12px;transition:200ms;">
+                                        <div class="titlehome">
+                                            <div class="adthumnail"><img class="imghome" src="assets/img/poodle.jpg"></div>
+                                            <div><a class="texthome" href="dog.html">Poodel trắng tinh khôi</a>
+                                                <div><span class="pricehome">3.000.000 đ</span></div>
+                                            </div>
+                                            <div class="AdBody_footer__78mtV"><a rel="noopener noreferrer" target="_blank"><img class="commonStyle_image__2y3kd commonStyle_round__3k7wj" height="16" width="16" src="https://static.chotot.com/storage/chotot-icons/svg/user.svg" alt="Tony Tèo"></a>
+                                                <div class="commonStyle_deviderWrapper__3FHXZ" style="margin-right:5px;"></div>
+                                                <div class="AdBody_adItemPostedTime__Oj7pr"><span class="AdBody_text__vR5s0">12 giờ trước</span></div>
+                                                <div class="commonStyle_deviderWrapper__3FHXZ" style="margin-right:5px;"></div><span class="AdBody_adItemPostedTime__Oj7pr AdBody_location__ujScT"><span class="AdBody_text__vR5s0">Đồng Nai</span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 formhome" style="background:#ffffff;padding:12px;transition:200ms;">
+                                        <div class="titlehome">
+                                            <div class="adthumnail"><img class="imghome" src="assets/img/poodle.jpg"></div>
+                                            <div><a class="texthome" href="dog.html">Poodel trắng tinh khôi</a>
+                                                <div><span class="pricehome">3.000.000 đ</span></div>
+                                            </div>
+                                            <div class="AdBody_footer__78mtV"><a rel="noopener noreferrer" target="_blank"><img class="commonStyle_image__2y3kd commonStyle_round__3k7wj" height="16" width="16" src="https://static.chotot.com/storage/chotot-icons/svg/user.svg" alt="Tony Tèo"></a>
+                                                <div class="commonStyle_deviderWrapper__3FHXZ" style="margin-right:5px;"></div>
+                                                <div class="AdBody_adItemPostedTime__Oj7pr"><span class="AdBody_text__vR5s0">12 giờ trước</span></div>
+                                                <div class="commonStyle_deviderWrapper__3FHXZ" style="margin-right:5px;"></div><span class="AdBody_adItemPostedTime__Oj7pr AdBody_location__ujScT"><span class="AdBody_text__vR5s0">Đồng Nai</span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 formhome" style="background:#ffffff;padding:12px;transition:200ms;">
+                                        <div class="titlehome">
+                                            <div class="adthumnail"><img class="imghome" src="assets/img/poodle.jpg"></div>
+                                            <div><a class="texthome" href="dog.html">Poodel trắng tinh khôi</a>
+                                                <div><span class="pricehome">3.000.000 đ</span></div>
+                                            </div>
+                                            <div class="AdBody_footer__78mtV"><a rel="noopener noreferrer" target="_blank"><img class="commonStyle_image__2y3kd commonStyle_round__3k7wj" height="16" width="16" src="https://static.chotot.com/storage/chotot-icons/svg/user.svg" alt="Tony Tèo"></a>
+                                                <div class="commonStyle_deviderWrapper__3FHXZ" style="margin-right:5px;"></div>
+                                                <div class="AdBody_adItemPostedTime__Oj7pr"><span class="AdBody_text__vR5s0">12 giờ trước</span></div>
+                                                <div class="commonStyle_deviderWrapper__3FHXZ" style="margin-right:5px;"></div><span class="AdBody_adItemPostedTime__Oj7pr AdBody_location__ujScT"><span class="AdBody_text__vR5s0">Đồng Nai</span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" role="tabpanel" id="tab-2">
+                                <div class="row"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+</body>
+
+</html>
